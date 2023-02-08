@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="profile-container">
+    <div class="profile-info">
+        <img src="{{ url_for('static', filename='pp.jpg') }}" class="pp" alt="profile picture"/>
+        <h3>Condoleezza Gaynor</h3>
+        <p>@woocondi</p>
+        <p>Kingston, Jamaica</p>
+        <p>Joined {{ date }}</p>
+    </div>
+        <p class="para">I am a talented young woman who loves website design and development. 
+        With a curious and open mind, I am always looking to expand my knowledge and skills, and to make a positive impact in the world.
+        Contact me. Let's collaborate.</p>
+    <div class="stats-panel">
+        <div class="stats"> 
+            <h6 class="count">7</h6>
+            <span>Posts</span>
+        </div>
+        <div class="stats"> 
+            <h6 class="count">0</h6>
+            <span>Following</span>
+        </div>
+        <div class="stats"> 
+            <h6 class="count">0</h6>
+            <span>Followers</span>
+        </div>
+    </div>
+    <div class="follow-btn">
+        <button>Follow</button>
+    </div>
+</div>
+{% endblock %}
